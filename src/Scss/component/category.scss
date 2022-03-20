@@ -1,0 +1,46 @@
+.section-categories {
+    padding: 2rem 0;
+    .row {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+        gap: 1.5rem;
+        @include for-size(1199) {
+            grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+        }
+        @include for-size(768) {
+            grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        }
+    }
+}
+
+.category__box {
+    background-color: $color-white-01;
+    padding: 3rem  2rem;
+    border-radius: 0.3rem;
+    outline-offset: -1rem;
+    outline: $outline;
+    text-align: center;
+    box-shadow: $box-shadow;
+    .category-image .image{
+        margin: 1rem 0 ;
+        height: 15rem;
+    }
+    .category-title {
+        font-size: 2.5rem;
+        color: $color-black;
+        padding-bottom: 1rem;
+        line-height: 1.8rem;
+    }
+    .category-desc {
+        font-size: 1.5reem;
+        color: $color-light;
+        line-height: 1.8rem;
+        padding: 1rem 0;
+    }
+    &:hover {
+        outline: $outline-hover;
+        outline-offset: 0rem;
+    }
+}
+
+

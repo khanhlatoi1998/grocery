@@ -1,0 +1,37 @@
+.section-review {
+    padding: 2rem 0;
+    .row {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        gap: 1rem;
+    }
+}
+
+.review__box {
+    background-color: $color-white-01;
+    outline: $outline;
+    outline-offset: -1rem;
+    box-shadow: $box-shadow;
+    border-radius: 0.3rem;
+    padding: 3rem 2rem;
+    text-align: center;
+    &:hover {
+        outline: $outline-hover;
+        outline-offset: 0;
+    }
+    .review__image {
+        text-align: center;
+        .image {
+            border-radius: 50%;
+            display: inline-block;
+        }
+    }
+    .review__content {
+        padding: 1rem 0;
+        color: $color-white-03;
+    }
+    .review__name {
+        font-size: 2.5rem;
+        padding-bottom: 0.5rem;
+    }    
+}

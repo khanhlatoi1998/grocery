@@ -1,0 +1,93 @@
+.section-footer {
+    padding: 2rem 0;
+    background-color: $color-white-01;
+    .row {
+        display: grid;
+        gap: 4rem;
+        grid-template-columns: repeat(4, 1fr);
+        @include for-size(991) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include for-size(600) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}
+
+.footer__box {
+    @include for-size(600) {
+        text-align: center;
+    }
+    .footer__title {
+        font-size: 2.5rem;
+        color: black;
+        font-weight: 700;
+        padding-bottom: 2.5rem;
+        i {
+            color: $color-orange;
+        }
+    }
+    .footer__content {
+        color: $color-light;
+    }
+    .footer__social {
+        @include flex();
+        @include for-size(600) {
+            justify-content: center;
+        }
+        gap: 1rem;
+        padding: 2rem 0;
+        .icon-link {
+            @include flex(center, center);
+            width: 4rem;
+            height: 4rem;
+            border-radius: 0.5rem;
+            background-color: $color-white-03;
+            font-size: 2rem;
+        }
+        .icon-link:hover {
+            background-color: $color-orange;
+            color: $color-white-01;
+        }
+    }
+    .footer__contact {
+        i {
+            color: $color-orange;
+            padding-right: 0.5rem;
+        }
+        li + li {
+            margin-top: 2rem;
+        }
+    }
+    .footer__links {
+        i {
+            color: $color-orange;
+            padding-right: 0.5rem;
+        }
+        li + li {
+            margin-top: 2rem;
+        }
+    }
+    .footer__newsletter {
+        form {
+            padding: 1rem 0;
+        }
+        .input-email {
+            width: 100%;
+            padding: 1rem 1rem;
+            background-color: $color-white-02;
+            text-transform: none;
+            border-radius: 0.5rem;
+        }
+    }
+}
+
+.footer__copyright {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    border-top: 1px solid $color-white-03;
+}

@@ -1,0 +1,214 @@
+@mixin box {
+    position: absolute;
+    top: 110%; right: -110%;
+    background-color: $color-white-01;
+    border-radius: 0.5rem;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+
+.header {
+    position: fixed;
+    top:0 ; left: 0; right: 0;
+    z-index: 999;
+    padding: 2rem 0 ;
+    background-color: $color-white-01;
+    box-shadow: $box-shadow;
+    .row {
+        @include flex(center, space-between);
+    }
+}
+
+.menu__logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: $color-black;
+    i {
+        color: $color-orange;
+    }
+}
+
+.menu__navbar {
+    @include for-size(768) {
+        @include box() ; 
+        width: 30rem;  
+    }
+}
+
+.navbar__list {
+    @include flex(center, space-between) ; 
+    .nav-item + .nav-item {
+        margin-left: 1.5rem;
+    }
+    .nav-link {
+        padding: 0.5rem 1.4rem;
+        border-radius: 2rem;
+        transition: 0.1s ;
+        &:hover {
+            color: $color-white-01;
+            background-color: $color-orange;    
+        }
+    }
+    @include for-size(991) {    
+        .nav-link {
+            padding: 0.5rem 0.5rem;
+        }
+    }
+    @include for-size(768) {
+        display: block;
+        .nav-item + .nav-item {
+            margin: 0;
+        }
+        .nav-link {
+            margin: 0.5rem 0;
+            display: block;
+            text-align: left;
+        }
+    }
+}
+
+.menu__btn-icon i {
+    background-color: $color-white-02;
+    width: 4.5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    text-align: center;
+    color: $color-black;
+    margin-right: 0.3rem;
+    cursor: pointer;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+    &:hover {
+        background-color: $color-orange;
+        color: $color-white-01;
+    }
+
+}
+
+.menu__btn-icon #menu-btn {
+    display: none;
+    @include for-size(768) {
+        display: inline-block;
+    }
+}
+
+.search-form {
+    @include box() ; 
+    width: 50rem;
+    height: 5rem;
+    overflow: hidden;
+    @include flex(center);
+    box-shadow: $box-shadow;
+    input {
+        padding: 0 0.5rem;
+        width: 100%;
+        height: 100%;
+        border: none;
+        outline: none;
+        text-transform: none;
+        cursor: pointer; 
+        font-size: 1.6rem;
+        color: $color-black;
+    }
+    label {
+        font-size: 2.2rem;
+        padding: 0 0.5rem;
+        cursor: pointer;
+        color: $color-black;
+        &:hover {
+            color: $color-orange;
+        }
+    }
+    @include for-size(768) {
+        width: 90%;
+    }
+}
+
+.menu__box-cart {
+    @include box(); 
+    width: 35rem; 
+    border-radius: 0.5rem;
+    .cart__singel-product {
+        @include flex(center);
+        gap: 1rem;
+        position: relative;
+        margin: 1rem 0;
+        .cart__image {
+            height: 10rem;
+            object-fit: fill;
+        }
+        .btn-delete {
+            font-size: 2rem;
+            position: absolute;
+            top:50%; right: 2rem;
+            padding: 2px;
+            cursor: pointer;
+            color: $color-black;
+            transform: translateY(-50%);
+        }
+        .btn-delete:hover {
+            color: $color-orange;
+        }
+        .content-name {
+            font-size: 1.7rem;
+            color: $color-black;
+            padding-bottom: 1rem;
+        }
+        .content-price, .content-quantity{
+            font-size: 1.6rem;
+            color: $color-white-03;
+        }
+        .content-quantity {
+            margin-left: 1rem;
+        }
+    }
+    .total {
+        font-size: 2.5rem;
+        text-align: center;
+        padding: 1rem 0;
+        color: $color-black;
+    }
+    .cart__btn {
+        display: block;
+        margin: 1rem;
+    }
+}
+
+.login-form {
+    @include box() ;
+    padding: 2rem ;
+    width: 30rem;
+    .form__title {
+        font-size: 2.5rem;
+        text-align: center;
+        text-transform: uppercase;
+        color: $color-black;
+    }
+    .box {
+        width: 100%;
+        padding: 1rem;
+        margin: 0.7rem 0;
+        background-color: $color-white-02;
+        border-radius: 0.5rem;
+        text-transform: none;
+        font-size: 1.6rem;
+        color: $color-black;
+
+    }
+    p {
+        font-size: 1.4rem;
+        padding: 0.5rem 0 ;
+        color: $color-black;
+        a {
+            color: $color-orange;
+            text-decoration: underline;
+        }
+    }
+    
+}
+
+.active-transition {
+    transition: 0.3s linear;
+    right: 2rem;
+}

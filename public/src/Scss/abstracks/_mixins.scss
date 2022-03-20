@@ -1,0 +1,79 @@
+@mixin for-size($breakpoint) {
+  @if $breakpoint == 1200 {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+  @if $breakpoint == 1199 {
+    @media (max-width: 1199px) {
+      @content;
+    }
+  }
+  @if $breakpoint == 992 {
+    @media (min-width: 992px) {
+      @content;
+    }
+  }
+  @if $breakpoint == 991 {
+    @media (max-width: 991px) {
+      @content;
+    }
+  }
+  @if $breakpoint == 769 {
+    @media (min-width: 769px) {
+      @content;
+    }
+  }
+  @if $breakpoint == 768 {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+  @if $breakpoint == 600 {
+    @media (max-width: 600px) {
+      @content;
+    }
+  }
+  @if $breakpoint == 600 {
+    @media (max-width: 600x) {
+      @content;
+    }
+  }
+  @if $breakpoint == 451 {
+    @media (min-width: 451px) {
+      @content;
+    }
+  }
+  @if $breakpoint == 450 {
+    @media (max-width: 450px) {
+      @content;
+    }
+  }
+}
+
+
+
+@mixin for-height($breakpoint) {
+    @if $breakpoint == 899 {
+      @media (max-height: 899px) {
+        @content;
+      }
+    }
+    @if $breakpoint == 799 {
+      @media (max-height: 799px) {
+        @content;
+      }
+    }
+    @if $breakpoint == 699 {
+      @media (max-height: 699px) {
+        @content;
+      }
+    }
+  }
+
+  @mixin flex($align: flex-start,  $justify: flex-start, $wrap: nowrap) {
+        display: flex;
+        align-items: $align;
+        justify-content: $justify;
+        flex-wrap: $wrap;
+  }

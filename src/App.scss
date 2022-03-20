@@ -1,0 +1,16 @@
+@import './scss/abstracks/mixins';
+@import './scss/abstracks/variables';
+@import './scss/bases/base';
+@import './scss/bases/fonts';
+@import './scss/bases/ultilities';
+@import './scss/component/header';
+@import './scss/component/banner';
+@import './scss/component/feature';
+@import './scss/component/product';
+@import './scss/component/category';
+@import './scss/component/review';
+@import './scss/component/blog';
+@import './scss/component/footer';
+
+@import "~slick-carousel/slick/slick.css"; 
+@import "~slick-carousel/slick/slick-theme.css";

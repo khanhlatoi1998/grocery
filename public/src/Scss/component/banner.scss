@@ -1,0 +1,40 @@
+.section-banner {
+    margin-top: 8.5rem;
+}
+
+.banner__wrapere {
+    background-image: url("https://thumbs.dreamstime.com/b/greek-food-background-traditional-different-greek-dishes-set-greek-food-background-traditional-different-greek-dishes-set-top-view-178761927.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10rem;
+    .container {
+        width: 60rem;
+        text-align: center;
+    }
+}
+
+.content {
+    width: 60rem;
+    text-align: center;
+    .banner-title {
+        font-size: 3rem;
+        color: $color-black;
+        span {
+            color: $color-orange;
+
+        }
+    }
+    .banner-detail {
+        font-size: 1.7rem;
+        color: $color-white-03;
+        padding: 1rem 0 ;
+        line-height: 1.8rem;
+    }
+
+}
+

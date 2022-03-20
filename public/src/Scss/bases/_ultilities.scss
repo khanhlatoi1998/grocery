@@ -1,0 +1,494 @@
+.btn {
+    display: inline-block;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 0.8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: 0.5rem;
+    border: 0.2rem solid $color-black;
+    color: $color-black;
+    background-color: none;
+    cursor: pointer;
+    &:hover {
+        background-color: $color-orange;
+        color: $color-white-01;
+    }
+}
+
+.heading {
+    text-align: center;
+    font-size: 3.5rem;
+    color: $color-black;
+    padding: 2rem 0 ;
+    padding-bottom: 3rem;
+    span {
+        color: $color-white-01;
+        display: inline-block;
+        padding: 0.5rem 3rem;
+        background-color: $color-orange;
+        clip-path: polygon(0 0, 100% 0, 93% 50%, 100% 100%, 0 100%, 7% 50%);
+    }
+}
+
+.icon-star {
+    padding: 0 0.3rem; 
+    font-size: 2rem;
+}
+.custom-empty {
+    color: $color-white-03;
+}
+.custom-full {
+    color: $color-orange;
+}
+
+.slick-slide {
+    padding: 0.5rem 1rem;
+    @include for-size(600) {
+        padding: 0.1rem 0;
+    }
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    padding: 0 15px;
+    margin: 0 auto;
+    @include for-size(1200) {
+        max-width: 114rem;
+    }
+    @include for-size(1199) {
+        max-width: 99rem;
+    }
+    @include for-size(991) {
+        max-width: 96rem;
+    }
+}
+
+// .row {
+//     display: flex;
+//     flex-wrap: wrap;
+//     margin-left: -15px;
+//     margin-right: -15px;
+// }
+
+.col-0 {
+    display: none;
+}
+
+$padding-xx : 0 1.5rem;
+$padding-ll : 0 1.5rem;
+$padding-mm : 0 1.5rem;
+$padding-ss : 0 1.5rem;
+$padding-cc : 0 1.5rem;
+
+.col-xx-1,
+.col-xx-2,
+.col-xx-3,
+.col-xx-4,
+.col-xx-5,
+.col-xx-6,
+.col-xx-7,
+.col-xx-8,
+.col-xx-9,
+.col-xx-10,
+.col-xx-11,
+.col-ll-1,
+.col-ll-2,
+.col-ll-3,
+.col-ll-4,
+.col-ll-5,
+.col-ll-6,
+.col-ll-7,
+.col-ll-8,
+.col-ll-9,
+.col-ll-10,
+.col-ll-11,
+.col-mm-1,
+.col-mm-2,
+.col-mm-3,
+.col-mm-4,
+.col-mm-5,
+.col-mm-6,
+.col-mm-7,
+.col-mm-8,
+.col-mm-9,
+.col-mm-10,
+.col-mm-11,
+.col-ss-1,
+.col-ss-2,
+.col-ss-3,
+.col-ss-4,
+.col-ss-5,
+.col-ss-6,
+.col-ss-7,
+.col-ss-8,
+.col-ss-9,
+.col-ss-10,
+.col-ss-11, {
+    padding : 0 1.5rem;
+}
+
+@include for-size(1200) {
+    .col-xx-1 {
+        display: block;
+        padding: $padding-xx;
+        flex: 0 0 8.33333%;
+        max-width: 8.33333%;
+    }
+    .col-xs-2 {
+        display: block;
+        padding: $padding-xx;
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+    }
+    .col-xs-3 {
+        display: block;
+        padding: $padding-xx;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .col-xs-4 {
+        display: block;
+        padding: $padding-xx;
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+    .col-xs-5 {
+        display: block;
+        padding: $padding-xx;
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
+    }
+    .col-xs-6 {
+        display: block;
+        padding: $padding-xx;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .col-xs-7 {
+        display: block;
+        padding: $padding-xx;
+        flex: 0 0 58.33333%;
+        max-width: 58.33333%;
+    }
+    .col-xs-8 {
+        display: block;
+        padding: $padding-xx;
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+    }
+    .col-xs-9 {
+        display: block;
+        padding: $padding-xx;
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    .col-xs-10 {
+        display: block;
+        padding: $padding-xx;
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+    }
+    .col-xs-11 {
+        display: block;
+        padding: $padding-xx;
+        flex: 0 0 91.66667%;
+        max-width: 91.66667%;
+    }
+}
+
+@include for-size(992) {
+    .col-ll-1 {
+        display: block;
+        padding: $padding-ll;
+        flex: 0 0 8.33333%;
+        max-width: 8.33333%;
+    }
+    .col-ll-2 {
+        display: block;
+        padding: $padding-ll;
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+    }
+    .col-ll-3 {
+        display: block;
+        padding: $padding-ll;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .col-ll-4 {
+        display: block;
+        padding: $padding-ll;
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+    .col-ll-5 {
+        display: block;
+        padding: $padding-ll;
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
+    }
+    .col-ll-6 {
+        display: block;
+        padding: $padding-ll;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .col-ll-7 {
+        display: block;
+        padding: $padding-ll;
+        flex: 0 0 58.33333%;
+        max-width: 58.33333%;
+    }
+    .col-ll-8 {
+        display: block;
+        padding: $padding-ll;
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+    }
+    .col-ll-9 {
+        display: block;
+        padding: $padding-ll;
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    .col-ll-10 {
+        display: block;
+        padding: $padding-ll;
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+    }
+    .col-ll-11 {
+        display: block;
+        padding: $padding-ll;
+        flex: 0 0 91.66667%;
+        max-width: 91.66667%;
+    }
+}
+
+@include for-size(769) {
+    .col-mm-1 {
+        display: block;
+        padding: $padding-mm;
+        flex: 0 0 8.33333%;
+        max-width: 8.33333%;
+    }
+    .col-mm-2 {
+        display: block;
+        padding: $padding-mm;
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+    }
+    .col-mm-3 {
+        display: block;
+        padding: $padding-mm;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .col-mm-4 {
+        display: block;
+        padding: $padding-mm;
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+    .col-mm-5 {
+        display: block;
+        padding: $padding-mm;
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
+    }
+    .col-mm-6 {
+        display: block;
+        padding: $padding-mm;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .col-mm-7 {
+        display: block;
+        padding: $padding-mm;
+        flex: 0 0 58.33333%;
+        max-width: 58.33333%;
+    }
+    .col-mm-8 {
+        display: block;
+        padding: $padding-mm;
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+    }
+    .col-mm-9 {
+        display: block;
+        padding: $padding-mm;
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    .col-mm-10 {
+        display: block;
+        padding: $padding-mm;
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+    }
+    .col-mm-11 {
+        display: block;
+        padding: $padding-mm;
+        flex: 0 0 91.66667%;
+        max-width: 91.66667%;
+    }
+}
+
+@include for-size(451) {
+    .col-ss-1 {
+        display: block;
+        padding: $padding-ss;
+        flex: 0 0 8.33333%;
+        max-width: 8.33333%;
+    }
+    .col-ss-2 {
+        display: block;
+        padding: $padding-ss;
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+    }
+    .col-ss-3 {
+        display: block;
+        padding: $padding-ss;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .col-ss-4 {
+        display: block;
+        padding: $padding-ss;
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+    .col-ss-5 {
+        display: block;
+        padding: $padding-ss;
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
+    }
+    .col-ss-6 {
+        display: block;
+        padding: $padding-ss;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .col-ss-7 {
+        display: block;
+        padding: $padding-ss;
+        flex: 0 0 58.33333%;
+        max-width: 58.33333%;
+    }
+    .col-ss-8 {
+        display: block;
+        padding: $padding-ss;
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+    }
+    .col-ss-9 {
+        display: block;
+        padding: $padding-ss;
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    .col-ss-10 {
+        display: block;
+        padding: $padding-ss;
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+    }
+    .col-ss-11 {
+        display: block;
+        padding: $padding-ss;
+        flex: 0 0 91.66667%;
+        max-width: 91.66667%;
+    }
+}
+
+// .col-xs-1 {
+//     display: block;
+//     padding-left: 4px;
+//     padding-right: 4px;
+//     flex: 0 0 8.33333%;
+//     max-width: 8.33333%;
+// }
+// .col-xs-2 {
+//     display: block;
+//     padding-left: 4px;
+//     padding-right: 4px;
+//     flex: 0 0 16.66667%;
+//     max-width: 16.66667%;
+// }
+// .col-xs-3 {
+//     display: block;
+//     padding-left: 4px;
+//     padding-right: 4px;
+//     flex: 0 0 25%;
+//     max-width: 25%;
+// }
+// .col-xs-4 {
+//     display: block;
+//     padding-left: 4px;
+//     padding-right: 4px;
+//     flex: 0 0 33.33333%;
+//     max-width: 33.33333%;
+// }
+// .col-xs-5 {
+//     display: block;
+//     padding-left: 4px;
+//     padding-right: 4px;
+//     flex: 0 0 41.66667%;
+//     max-width: 41.66667%;
+// }
+// .col-xs-6 {
+//     display: block;
+//     padding-left: 4px;
+//     padding-right: 4px;
+//     flex: 0 0 50%;
+//     max-width: 50%;
+// }
+// .col-xs-7 {
+//     display: block;
+//     padding-left: 4px;
+//     padding-right: 4px;
+//     flex: 0 0 58.33333%;
+//     max-width: 58.33333%;
+// }
+// .col-xs-8 {
+//     display: block;
+//     padding-left: 4px;
+//     padding-right: 4px;
+//     flex: 0 0 66.66667%;
+//     max-width: 66.66667%;
+// }
+// .col-xs-9 {
+//     display: block;
+//     padding-left: 4px;
+//     padding-right: 4px;
+//     flex: 0 0 75%;
+//     max-width: 75%;
+// }
+// .col-xs-10 {
+//     display: block;
+//     padding-left: 4px;
+//     padding-right: 4px;
+//     flex: 0 0 83.33333%;
+//     max-width: 83.33333%;
+// }
+// .col-xs-11 {
+//     display: block;
+//     padding-left: 4px;
+//     padding-right: 4px;
+//     flex: 0 0 91.66667%;
+//     max-width: 91.66667%;
+// }
+// .col-xs-12 {
+//     display: block;
+//     padding-left: 4px;
+//     padding-right: 4px;
+//     flex: 0 0 100%;
+//     max-width: 100%;
+// }
+
+
+
+
